@@ -8,12 +8,14 @@ def solution(A: list[int], k: int)-> int:
         lo = mid+1
     elif(A[mid]==k):
         result=mid
-        lo=mid+1
+        lo=mid+1 #for finding the last occurance of key k if k is present
     else:
         hi = mid-1
    if(result==-1):
-    return lo
-   return result+1
+    # if key is not present than the lo is always the first greater element than the key k  
+    return lo 
+   # if key is present result contains the last occurance position of k, returning the next position i.e, the first occurance of greater element
+   return result+1 
 
 if __name__=='__main__':
     #A=list(map(int, input().split()))
