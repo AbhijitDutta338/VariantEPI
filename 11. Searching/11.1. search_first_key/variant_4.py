@@ -1,4 +1,5 @@
 #Problem: Write a program which tests if p is a prefix of a string in an array of sorted strings
+#Solution here is O(mlogn) m being the size of p. Please give a pull request for a better algorithm with binary search.
 
 def isprefix(key: str, ele: str)-> int:
     for i in range(len(key)):
